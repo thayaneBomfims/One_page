@@ -6,3 +6,57 @@ li i{
     width: 25px;
     color: whitesmoke;
 }
+
+/*Banner slider*/
+
+.container-fluid{
+    padding: 0;
+}
+
+#Slidep .carousel-inner, #Slidep .carousel-item{
+    height: 90vh;
+}
+
+#Slidep .carousel-caption{
+    top: 40%
+}
+
+#Slidep .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#Slidep .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: whitesmoke;
+}
+
+.main-btn {
+    background-color: black;
+    color:blanchedalmond;
+    width: 200px;
+    height: 60px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .15s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: black;
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}
+
+/* Carrosel not*/
+
+.owl-carousel img{
+    height: 220px;
+}
