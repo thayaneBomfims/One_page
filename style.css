@@ -13,23 +13,26 @@ li i{
     padding: 0;
 }
 
-#Slidep .carousel-inner, #Slidep .carousel-item{
-    height: 90vh;
+#Slidep{
+    max-height: 91vh;
+    overflow: hidden;
+}
+
+#Slidep .carousel-inner .carousel-item{
+    position: relative !important;
 }
 
 #Slidep .carousel-caption{
-    top: 40%
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 #Slidep .carousel-caption h2{
     font-size: 50px;
-    margin-bottom: 30px;
 }
 
 #Slidep .carousel-caption p{
     font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 100px;
     color: whitesmoke;
 }
 
@@ -68,12 +71,73 @@ li i{
     font-size: 20px;
     color: black;
     font-weight: bold;
-    padding: 0;
 }
 
-.text{
-    margin-top: auto;
+.title-two{
+    color: black;
+    margin: 60px 0 0px 0;
+    font-size: 40px;
+    text-align: center;
 }
+
+
+/*Galeria*/
+
+.item{
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.item:hover{
+    filter: brightness(60%);
+}
+
+.item .icon{
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 50px;
+    color: blanchedalmond;
+}
+
+.item:hover .icon{
+    opacity: 1;
+}
+
+/*Notícias*/
+
+.owl-carousel .nav-btn{
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 100px !important;
+    color: black;
+  }
+  
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+  }
+  
+  .owl-carousel .prev-slide{
+    background: url(nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+  }
+  .owl-carousel .next-slide{
+    background: url(nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+  }
+  .owl-carousel .prev-slide:hover{
+   background-position: 0px -53px;
+  }
+  .owl-carousel .next-slide:hover{
+  background-position: -24px -53px;
+  }
+
 
 /* Carrosel not*/
 
