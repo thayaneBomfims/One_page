@@ -1,13 +1,37 @@
-.nav-link{
+
+.nav-item .nav-link{
+    text-transform: uppercase;
     color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+
+    transition: 0.2s;
+    display: block;
+    justify-content: center;
+    height: 80%;
+    margin-top: .4rem;
 }
 
-li i{
-    width: 25px;
-    color: whitesmoke;
+.nav-icon{
+    text-align: center;
 }
 
-/*Banner slider*/
+.nav-icon>a{
+    color: whitesmoke;
+    font-size: 16.5px;
+    padding-left: 3px;
+    padding-right: 0;
+    width: 27px;
+}
+
+ a.active{
+    background-color:rgb(63, 59, 59);
+    border-radius: 10%;
+    font-weight: bold;
+
+}
+
+/*Banner slider\formulário*/
 
 .container-fluid{
     padding: 0;
@@ -22,64 +46,179 @@ li i{
     position: relative !important;
 }
 
-#Slidep .carousel-caption{
-    top: 50%;
-    transform: translateY(-50%)
+.texto{
+    text-shadow: 0px 0px 10px black;
+    max-width: 400px;
 }
 
-#Slidep .carousel-caption h2{
-    font-size: 50px;
-}
-
-#Slidep .carousel-caption p{
-    font-size: 22px;
+#Slidep .texto h1{
+    font-size: 2.5rem;
     color: whitesmoke;
+    text-align: left;
+    padding-left: 10%;
 }
 
-.main-btn {
-    background-color: black;
-    color:blanchedalmond;
-    width: 200px;
-    height: 60px;
-    padding: 10px 15px;
-    border-radius: 30px;
-    border: 3px solid transparent;
-    transition: .15s;
+#Slidep .texto h2{
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: left;
 }
 
-.main-btn:hover {
-    text-decoration: none;
-    color: #FFF;
-    background-color: transparent;
-    border-color: black;
+#Slidep .texto p{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-align: justify;
+    padding-bottom: auto;
+    font-weight:lighter;
+    padding-left: 10%;
+
+}
+
+.carousel-inner .carousel-item{
+    height: 91vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .carousel-indicators .active{
-    background-color: black;
+    background-color:white;
+    padding-top: 5px;
+}
+
+#format{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+}
+
+.backc{
+    background-color: rgb(12, 10, 14);
+    color: white;
+    border-color: transparent;
+    box-shadow: black (0 0 0 0.2rem);
+}
+
+.form-control.backc:focus {
+    color: white;
+    background-color: rgb(61, 58, 63);
+    border-color: #5a5c5e;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem;
+}
+
+.form-check{
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#botao{
+    background-color: rgb(12, 10, 14);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bolder;
+
+    border-color: transparent;
+
+    display: block;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: 20px auto;
 }
 
 /*Sobre*/
 
 .title{
     color: black;
-    margin: 60px 0 60px 0;
-    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 45px;
     text-align: center;
+    font-weight:lighter;
+}
+
+h2:after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: rgb(98, 36, 116);
+    margin: 5px auto auto auto;
 }
 
 .about-title{
-    font-size: 20px;
+    vertical-align: auto;
+    font-size: 25px;
     color: black;
-    font-weight: bold;
 }
 
-.title-two{
-    color: black;
-    margin: 60px 0 0px 0;
-    font-size: 40px;
-    text-align: center;
+.ser{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
+.serv{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#draw{
+    padding-right: 10px;
+    color:rgb(98, 36, 116);
+}
+
+#anim-let:hover{
+    color: rgb(98, 36, 116);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+#about-area{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5)), url(./Img/img1.jpg);
+    background-size: cover;
+    padding: 25px 0 40px 0;
+    position: relative;
+}
+
+/*Call to Action*/
+#call-to-action{
+    background-color: rgb(33, 29, 34);
+    color: whitesmoke;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#call-to-action .cta-btn {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#call-to-action .cta-btn:hover{
+    color: white;
+    background-color: rgb(61, 58, 63);
+    border-color: #5a5c5e;
+    box-shadow: 0 0 0 0.2rem;
+
+    text-decoration: none;
+}
 
 /*Galeria*/
 
@@ -98,12 +237,29 @@ li i{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    font-size: 50px;
+    font-size: 40px;
     color: blanchedalmond;
 }
 
 .item:hover .icon{
     opacity: 1;
+}
+
+#galerry{
+    background-color: rgb(33, 29, 34);
+    color: whitesmoke;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.title-two{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+    font-weight:lighter;
 }
 
 /*Notícias*/
@@ -137,6 +293,44 @@ li i{
   .owl-carousel .next-slide:hover{
   background-position: -24px -53px;
   }
+
+#title-card{
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: black;
+}
+
+#data-card{
+    padding-top: 0px;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 15px;
+    font-weight:normal;
+}
+
+#news-carousel #bot-card{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    display: inline-block;
+    padding: 8px 130px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: transparent;
+    background-color: rgb(98, 36, 116);
+    color: #fff;
+}
+
+#news-carousel #bot-card:hover{
+    color: white;
+    background-color: rgb(33, 29, 34);
+    border-color: white;
+    box-shadow: 0 0 0 0.2rem;
+
+    text-decoration: none;
+}
+
 
 
 /* Carrosel not*/

@@ -12,48 +12,61 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <script src="https://kit.fontawesome.com/72246b7439.js" crossorigin="anonymous"></script>
 
+        <title>Teste</title>
+        <link rel="icon" 
+              type="image/png" 
+              href="./Img/icone.png"/>
+
     </head>
     <body>
         
         <!--NavBar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: black;">
 
-            <div class="container">
+            <div class="container" style="justify-content: auto;">
                 <a class="navbar-brand" href="#"> <img style="width: 100px;" src="./Img/Logo Teste Light.svg"></a> <!--mudar nome da classe navbar-brand se possivel-->
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite"> <!--mudar nome da data target navbarSite se possivel-->
-                    <span class="navbar-toggle-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite";> <!--mudar nome da data target navbarSite se possivel-->
+                    <span><i class="fas fa-gamepad" style="color: white;"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSite">
 
-                    <ul class="navbar nav ml-auto" style="justify-content:start"> <!-- Forma de lista -->
+                    <ul class="nav ml-auto" id="menu" style="justify-content:center"> <!-- Forma de lista -->
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Home</a> 
+                            <a class="nav-link active menu-item scrollTo" href=#banner-carousel> Home</a> 
                         </li> <!-- Itens da lista -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Sobre</a> 
+                            <a class="nav-link menu-item scrollTo" href="#about-area"> Sobre</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Galeria</a> 
+                            <a class="nav-link menu-item scrollTo" href="#services"> Serviços</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Notícias</a> 
+                            <a class="nav-link menu-item scrollTo" href="#galerry"> Galeria</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Contato</a> 
+                            <a class="nav-link menu-item scrollTo" href="#news-carousel"> Notícias</a> 
                         </li>
-                        <li class="nav-item" style="margin-left: 5px;">
-                            <i class="fab fa-instagram"></i>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item scrollTo" href="#contact"> Contato</a> 
                         </li>
-                        <li class="nav-item" style="margin-left: 3px";>
-                            <i class="fab fa-facebook"></i>
+                        <li class="nav-icon" style="margin-left: 20px; text-align: center;">
+                            <a class="nav-link" target="_blank" href="https://www.instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </li>
-                        <li class="nav-item" style="margin-left: 3px";>
-                            <i class="fab fa-linkedin-in"></i>
+                        <li class="nav-icon" style="text-align: center;">
+                            <a class="nav-link" target="_blank" href="https://www.facebook.com">
+                                <i class="fab fa-facebook"></i>
+                            </a>
                         </li>
-
+                        <li class="nav-icon" style="text-align: center;">
+                            <a class="nav-link" target="_blank" href="https://www.linkedin.com">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -62,233 +75,368 @@
         </nav>
 
         <!--Banner Carrosel-->
-        <div class="container-fluid">
-            <div id="Slidep" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#Slidep" data-slide-to="0" class="active"></li>
-                    <li data-target="#Slidep" data-slide-to="1"></li>
-                    <li data-target="#Slidep" data-slide-to="2"></li>
-                </ol>   
+        <div class="container-fluid ">
+            <div class="scrollspy" id="banner-carousel">
+                <div id="Slidep" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#Slidep" data-slide-to="0" class="active"></li>
+                        <li data-target="#Slidep" data-slide-to="1"></li>
+                        <li data-target="#Slidep" data-slide-to="2"></li>
+                        <li data-target="#Slidep" data-slide-to="3"></li>
+                        <li data-target="#Slidep" data-slide-to="4"></li>
+                        <li data-target="#Slidep" data-slide-to="5"></li>
+                    </ol>   
 
-                <div class="carousel-inner h-100" style="max-height: 91vh;">
-                    <div class="carousel-item active h-100" style="max-height: 91vh;">
-                        <img src="./Img/img1.jpg" class="d-block w-100"/>
-                        <div class="carousel-caption d-block">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <h2>Lorem ipsum dapibus aliquam</h2>
-                                    <p>ipsum commodo bibendum ultricies mattis</p>
-                                    <a href="#" class="main-btn">Sla</a>
+                    <div class="carousel-inner" style="max-height: 91vh;">
+
+                        <div class="carousel-item active" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img1.jpg);">                         
+                                <div class="container">
+                                    <div class="row" style="height:91vh">
+                                        <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                            <div class="texto">
+                                                <h1>Lorem ipsum</h1>
+                                                <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-10 col-md-4 d-flex align-items-center">
+                                            <form class="form" style="background-color: rgb(33, 29, 34); border-radius: 10px; border:2px solid black">
+                                                <div class="form-row">
+                                                    <div class="form-group col-12" style="margin-bottom: 0px;">
+                                                        <p style="color: white; font-family: Montserrat, sans-serif; text-align: center; margin-bottom: 0px; margin-top: 20px;">sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                                                    </div>
+                                                    <div id="format" class="form-group col-11">
+                                                        <label for="inputname"></label>
+                                                        <input type="text" class="form-control backc" id="inputname" placeholder="Seu nome">
+                                                    </div>
+                                                    <div id="format" class="form-group col-11">
+                                                        <label for="inputTel"></label>
+                                                        <input type="text" class="form-control backc" id="inputTel" placeholder="Telefone">
+                                                    </div>
+                                                    <div id="format" class="form-group col-11">
+                                                        <label for="inputemail"></label>
+                                                        <input type="text" class="form-control backc" id="inputemail" placeholder="E-mail">
+                                                    </div>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check=label" style="text-align: center;">
+                                                        <input class="form-check-input" type="checkbox">Desejo receber novidades por e-mail
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <button type="submit" class="btn btn-dark" id="botao"><i class="fas fa-dove" style="margin-right: 10px; font-size: 18px;"></i>Enviar</button>
+                                                </div>
+
+                                            </form>                                            
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <h2>Lorem ipsum dapibus aliquam</h2>
-                                    <p>ipsum commodo bibendum ultricies mattis</p>
-                                    <a href="#" class="main-btn">Sla</a>
+                            </div>
+
+                        <div class="carousel-item" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img2.jpg);">                         
+                            <div class="container">
+                                <div class="row" style="height:91vh">
+                                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                        <div class="texto">
+                                            <h1>Lorem ipsum</h1>
+                                            <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
+                                        </div>                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="carousel-item h-100" style="max-height: 91vh;">
-                        <img src="./Img/img2.jpg" class="d-block w-100"/>
-                        <div class="carousel-caption d-block">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <h2>Lorem ipsum dapibus aliquam</h2>
-                                    <p>ipsum commodo bibendum ultricies mattis</p>
-                                    <a href="#" class="main-btn">Sla</a>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <h2>Lorem ipsum dapibus aliquam</h2>
-                                    <p>ipsum commodo bibendum ultricies mattis</p>
-                                    <a href="#" class="main-btn">Sla</a>
+                        <div class="carousel-item" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img3.jpg);">                         
+                            <div class="container">
+                                <div class="row" style="height:91vh">
+                                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                        <div class="texto">
+                                            <h1>Lorem ipsum</h1>
+                                            <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
+                                        </div>                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="carousel-item h-100" style="max-height: 91vh;">
-                        <img src="./Img/img3.jpg" class="d-block w-100"/>
-                        <div class="carousel-caption d-block">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <h2>Lorem ipsum dapibus aliquam</h2>
-                                    <p>ipsum commodo bibendum ultricies mattis</p>
-                                    <a href="#" class="main-btn">Sla</a>
+                        <div class="carousel-item" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img4.jpg);">                         
+                            <div class="container">
+                                <div class="row" style="height:91vh">
+                                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                        <div class="texto">
+                                            <h1>Lorem ipsum</h1>
+                                            <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
+                                        </div>                                            
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <h2>Lorem ipsum dapibus aliquam</h2>
-                                    <p>ipsum commodo bibendum ultricies mattis</p>
-                                    <a href="#" class="main-btn">Sla</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img5.jpg);">                         
+                            <div class="container">
+                                <div class="row" style="height:91vh">
+                                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                        <div class="texto">
+                                            <h1>Lorem ipsum</h1>
+                                            <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
+                                        </div>                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img6.jpg);">                         
+                            <div class="container">
+                                <div class="row" style="height:91vh">
+                                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                        <div class="texto">
+                                            <h1>Lorem ipsum</h1>
+                                            <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
+                                        </div>                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <a href="#Slidep" class="carousel-control-prev" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span aria-hidden="true"><i class="far fa-arrow-alt-circle-left" style="font-size: 30px; color: white"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a href="#Slidep" class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span aria-hidden="true"><i class="far fa-arrow-alt-circle-right" style="font-size: 30px; color: white;"></i></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
         </div>
 
         <!--Sobre-->
-        <div class="container-fluid">   
-            <div id="about-area">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12">
-                            <h3 class="title">Mauris ipsum eu donec senectus</h3>
+            <div class="container-fluid">   
+                <div class="scrollspy" id="about-area">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <h2 class="title">Sobre</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" style="box-shadow: -6px 6px 9px rgb(50 50 50 / 77%)" src="./Img/img7.jpg">
+                            </div>
+                            <div class="text col-md-6 mt-4 mt-md-0">
+                                <h3 class="about-title">Senectus</h3>
+                                <p>Ornare litora magna molestie vitae quisque metus aenean, taciti a ante blandit nulla</p>
+                                <p>aliquam inceptos, lectus orci convallis torquent felis dolor. class sapien maecenas hac duis </p>
+                                <p>donec semper ut placerat, curabitur rutrum erat ipsum iaculis nec nunc volutpat facilisis</p>
+                                <p>Magna cursus</p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid" src="./Img/img6.jpg" alt="donec senectus">
-                        </div>
-                        <div class="text col-md-6 mt-4 mt-md-0">
-                            <h3 class="about-title">senectus</h3>
-                            <p>Ornare litora magna molestie vitae quisque metus aenean, taciti a ante blandit nulla</p>
-                            <p>aliquam inceptos, lectus orci convallis torquent felis dolor. class sapien maecenas hac duis </p>
-                            <p>donec semper ut placerat, curabitur rutrum erat ipsum iaculis nec nunc volutpat facilisis</p>
-                            <p>Magna cursus</p>
-                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        <!--Call to action-->
+        <section id=call-to-action>
+                <div class="container text-center">
+                    <h3 id="about-title">Call to Action</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a class="cta-btn" href="#">Click me</a>
+                </div>
+
+        </section>
+
+        <!--Serviços-->
+        <div id="services" class="container scrollspy">
+
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h2 class="title">Serviços</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="ser col-sm-6 col-md-4 py-3">
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-laptop"></i>Lorem Ipsum</h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="ser col-sm-6 col-md-4 py-3">
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-xbox"></i>Dolor Sitema</h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="ser col-sm-6 col-md-4 py-3">
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-playstation"></i>Sed ut perspiciatis</h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="serv col-sm-6 col-md-4 py-3">
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-google-play"></i>Magni Dolores</h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="serv col-sm-6 col-md-4 py-3">
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-app-store-ios"></i>Nemo Enim</h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="serv col-sm-6 col-md-4 py-3">
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-microsoft"></i>Eiusmod Tempor</h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>           
+            </div>
+
+        </div>
+
+
+        <!--Galeria-->
+        <section id="galerry">
+            <div class="container">
+                <div class="scrollspy">
+
+                <h2 class="title-two">Galeria de Imagens</h2>
+                <p style="text-align: center; padding-bottom: 20px;">Aqui terão imagens e um textinho</p>
+            
+                <div class="row mt-4">
+                    <div class="item col-sm-6 col-md-4 py-3">
+                        <a class="fancybox" href="./Img/img1.jpg" data-fancybox="gallery1">
+                            <img class="img-fluid" style="max-width: 100%; box-shadow: -9px -9px 1px rgb(50 50 50 / 77%)" src="./Img/img1.jpg">
+                            <i class="fas fa-gamepad icon"></i>
+                        </a>
+                    </div>
+                    <div class="item col-sm-6 col-md-4 py-3">
+                        <a class="fancybox" href="./Img/img2.jpg" data-fancybox="gallery1">
+                            <img class="img-fluid" style="max-width: 100%; box-shadow: 0px -9px 2px rgb(50 50 50 / 77%)" src="./Img/img2.jpg">
+                            <i class="fas fa-gamepad icon"></i>
+                        </a>
+                    </div>
+                    <div class="item col-sm-6 col-md-4 py-3">
+                        <a class="fancybox" href="./Img/img3.jpg" data-fancybox="gallery1">
+                            <img class="img-fluid" style="max-width: 100%; box-shadow: 9px -9px 2px rgb(50 50 50 / 77%)" src="./Img/img3.jpg">
+                            <i class="fas fa-gamepad icon"></i>
+                        </a>
+                    </div>
+                    <div class="item col-sm-6 col-md-4 py-3">
+                        <a class="fancybox" href="./Img/img4.jpg" data-fancybox="gallery1">
+                            <img class="img-fluid" style="max-width: 100%; box-shadow: -9px 9px 2px rgb(50 50 50 / 77%)" src="./Img/img4.jpg">
+                            <i class="fas fa-gamepad icon"></i>
+                        </a>
+                    </div>
+                    <div class="item col-sm-6 col-md-4 py-3">
+                        <a class="fancybox" href="./Img/img5.jpg" data-fancybox="gallery1">
+                            <img class="img-fluid" style="max-width: 100%; box-shadow: 0px 9px 2px rgb(50 50 50 / 77%)" src="./Img/img5.jpg">
+                            <i class="fas fa-gamepad icon"></i>
+                        </a>
+                    </div>
+                    <div class="item col-sm-6 col-md-4 py-3">
+                        <a class="fancybox" href="./Img/img6.jpg" data-fancybox="gallery1">
+                            <img class="img-fluid" style="max-width: 100%; box-shadow: 9px 9px 2px rgb(50 50 50 / 77%)" src="./Img/img6.jpg">
+                            <i class="fas fa-gamepad icon"></i>
+                        </a>
                     </div>
 
                 </div>
+                </div>
             </div>
-        </div>
-
-        <!--Galeria-->
-        <div class="container">
-            <h2 class="title-two">Galeria de Imagens</h2>
-            <p style="text-align: center; padding-bottom: 20px;">Aqui terão imagens e um textinho</p>
-        
-            <div class="row mt-4">
-                <div class="item col-sm-6 col-md-4 py-3">
-                    <a class="fancybox" href="./Img/img1.jpg" data-fancybox="gallery1">
-                        <img src="./Img/img1.jpg" style="max-width: 100%;">
-                        <i class="fas fa-camera icon"></i>
-                    </a>
-                </div>
-                <div class="item col-sm-6 col-md-4 py-3">
-                    <a class="fancybox" href="./Img/img2.jpg" data-fancybox="gallery1">
-                        <img src="./Img/img2.jpg" style="max-width: 100%;">
-                        <i class="fas fa-camera icon"></i>
-                    </a>
-                </div>
-                <div class="item col-sm-6 col-md-4 py-3">
-                    <a class="fancybox" href="./Img/img3.jpg" data-fancybox="gallery1">
-                        <img src="./Img/img3.jpg" style="max-width: 100%;">
-                        <i class="fas fa-camera icon"></i>
-                    </a>
-                </div>
-                <div class="item col-sm-6 col-md-4 py-3">
-                    <a class="fancybox" href="./Img/img4.jpg" data-fancybox="gallery1">
-                        <img src="./Img/img4.jpg" style="max-width: 100%;">
-                        <i class="fas fa-camera icon"></i>
-                    </a>
-                </div>
-                <div class="item col-sm-6 col-md-4 py-3">
-                    <a class="fancybox" href="./Img/img5.jpg" data-fancybox="gallery1">
-                        <img src="./Img/img5.jpg" style="max-width: 100%;">
-                        <i class="fas fa-camera icon"></i>
-                    </a>
-                </div>
-                <div class="item col-sm-6 col-md-4 py-3">
-                    <a class="fancybox" href="./Img/img6.jpg" data-fancybox="gallery1">
-                        <img src="./Img/img6.jpg" style="max-width: 100%;">
-                        <i class="fas fa-camera icon"></i>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
+        </section>
 
         <!--Notícias-->
-        <div id="info-carousel" class="container">
-            <h2 class="title-two">Notícias</h2>
+        <div class="container">
+            <div class="scrollspy" id="news-carousel">
+
+            <h2 class="title">Notícias</h2>
             <p style="text-align: center; padding-bottom: 20px;">Aqui terão as notícias e textinho</p>
 
             <div class="owl-carousel owl-theme">
                 <div class="ml-2 mr-2">
-                    <div class="card">
-                        <img src="./Img/img1.jpg" class="card-img-top"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Título 1</h5>
-                            <p style="padding-bottom: 5%;">Coisas escritas</p>
-                            <a href="#" class="main-btn" style="padding-bottom: 5%;">Sla</a>
+                    <div class="card border-light mb-3">
+                        <img src="./Img/card1.jpg" class="card-img-top"> 
+                        <div class="card-body text-dark" style="padding: 1rem 0;">
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Dying Light 2 terá modos 4K, 60fps e ray-tracing  na PS5 e Xbox Series Dying Light 2</h3>
+                            <h4 id="data-card">1/04/2021</h4>
+                            <p style="padding-bottom: 1%; text-align: justify; font-weight:lighter;">Dying Light 2 já sofreu diversos adiamentos, que não afetam o entusiasmo à sua volta, mesmo que as informações sobre o que esperar do trabalho da Techland tenham sido escassas nos últimos meses.</p>
+                        </div>
+                        <div class="card-body" style="padding: .5rem 0;" style="margin-right: auto; margin-left: auto;">
+                            <a href="https://www.eurogamer.pt/articles/2021-04-01-dying-light-2-tera-modos-4k-60fps-e-ray-tracing-na-ps5-e-xbox-series" id="bot-card" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="ml-2 mr-2">
-                    <div class="card">
-                        <img src="./Img/img2.jpg" class="card-img-top"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Título 2</h5>
-                            <p style="padding-bottom: 5%;">Coisas escritas</p>
-                            <a href="#" class="main-btn">Sla</a>
+                    <div class="card border-light mb-3">
+                        <img src="./Img/card2.jpeg" class="card-img-top"> 
+                        <div class="card-body text-dark" style="padding: 1rem 0;">
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Resident Evil terá mesma história dos jogos</h3>
+                            <h4 id="data-card">31/03/2021</h4>
+                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">A história dos primeiros filmes de Resident Evil não era exatamente o ponto forte da franquia nos cinemas, deixando muitos fãs descontentes com o rumo que a franquia tomou nos cinemas.</p>
+                        </div>
+                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
+                            <a href="https://www.comboinfinito.com.br/principal/resident-evil-tera-mesma-historia-dos-jogos-afirma-ator/" id="bot-card" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="ml-2 mr-2">
-                    <div class="card">
-                        <img src="./Img/img3.jpg" class="card-img-top"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Título 3</h5>
-                            <p style="padding-bottom: 5%;">Coisas escritas</p>
-                            <a href="#" class="main-btn">Sla</a>
+                    <div class="card border-light mb-3">
+                        <img src="./Img/card3.jpg" class="card-img-top"> 
+                        <div class="card-body text-dark" style="padding: 1rem 0;">
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">PUBG Lite será descontinuado no fim de abril</h3>
+                            <h4 id="data-card">31/03/2021</h4>
+                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">A PUBG Corporation anunciou que o suporte ao PUBG Lite vai acabar em 29 de abril. A partir de hoje (31) já não é mais possível baixar o game ou comprar a moeda virtual L-COIN.</p>
+                        </div>
+                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
+                            <a href="https://www.terra.com.br/diversao/games/pubg-lite-sera-descontinuado-no-fim-de-abril,b22b12515ef0b7caad36a2a3dc9f3678ytsngcrt.html" id="bot-card" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="ml-2 mr-2">
-                    <div class="card">
-                        <img src="./Img/img4.jpg" class="card-img-top"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Título 4</h5>
-                            <p style="padding-bottom: 5%;">Coisas escritas</p>
-                            <a href="#" class="main-btn">Sla</a>
+                    <div class="card border-light mb-3">
+                        <img src="./Img/card4.jpg" class="card-img-top"> 
+                        <div class="card-body text-dark" style="padding: 1rem 0;">
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Alan Wake 2 estaria em desenvolvimento pela Remedy</h3>
+                            <h4 id="data-card">01/04/2021</h4>
+                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">Alan Wake 2 chegou ás manchetes com um rumor sobre o seu desenvolvimento. Contudo, conforme dito, trata-se apenas de um rumor. Mas sabemos que onde há fumaça, normalmente há fogo.</p>
+                        </div>
+                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
+                            <a href="https://www.comboinfinito.com.br/principal/alan-wake-2-estaria-em-desenvolvimento-pela-remedy-segundo-rumor/" id="bot-card" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="ml-2 mr-2">
-                    <div class="card">
-                        <img src="./Img/img5.jpg" class="card-img-top"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Título 5</h5>
-                            <p style="padding-bottom: 5%;">Coisas escritas</p>
-                            <a href="#" class="main-btn">Sla</a>
+                    <div class="card border-light mb-3">
+                        <img src="./Img/card5.jpg" class="card-img-top"> 
+                        <div class="card-body text-dark" style="padding: 1rem 0;">
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Como conseguir o arco Fang of Draugr em Valheim</h3>
+                            <h4 id="data-card">31/03/2021</h4>
+                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">Uma das melhores armas de Valheim é o arco Fang of Draugr. O equipamento, além de ser estiloso, tem um alto poder de perfuração e também causa dano de veneno.</p>
+                        </div>
+                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
+                            <a href="https://www.terra.com.br/diversao/games/como-conseguir-o-arco-fang-of-draugr-em-valheim,ac2135dd3dbbceecd56532f6bc731afe9f23e62i.html" id="bot-card" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="ml-2 mr-2">
-                    <div class="card">
-                        <img src="./Img/img6.jpg" class="card-img-top"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Título 6</h5>
-                            <p style="padding-bottom: 5%;">Coisas escritas</p>
-                            <a href="#" class="main-btn">Sla</a>
+                    <div class="card border-light mb-3">
+                        <img src="./Img/card6.jpg" class="card-img-top"> 
+                        <div class="card-body text-dark" style="padding: 1rem 0;">
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">No Man's Sky ganha modo de "Expedições Compartilhadas"</h3>
+                            <h4 id="data-card">31/03/2021</h4>
+                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">No Man's Sky recebeu uma atualização nesta quarta-feira (31) intitulada "Expeditions". O update é gratuito e traz um novo modo de jogo - as "Expedições Compartilhadas".</p>
+                        </div>
+                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
+                            <a href="https://www.terra.com.br/diversao/games/no-mans-sky-ganha-modo-de-expedicoes-compartilhadas-em-atualizacao,19068e11591ea6d397687a4d7a3c7d31f1qjv01m.html" id="bot-card" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
-
+                
             </div>
-
+            </div>
         </div>
 
         <!--Fale conosco-->
-
         <div class="container">
+            <div class="scrollspy" id="contact">
             <div class="contact">
-            <h2 class="title-two">Contatos</h2>
+            <h2 class="title">Contatos</h2>
             <p style="text-align: center; padding-bottom: 20px;">Aqui terão as formas de contato e símbolos</p>
 
                 <div class="row">
@@ -361,6 +509,7 @@
                 </div>
 
             </div>
+            </div>
             
         </div>
 
@@ -384,16 +533,16 @@
                         <h3>Enviar por e-mail</h3>
                         <p>Se a pessoa gostou, cadastrar o e-mail para receber mais informações</p>
                     </div>
-
-                </div>
-
+                </div> 
             </div>
-            
-            <div class="row" style="padding-top: 20px; background-color:black;">
+
+            <div class="container-fluid">
+            <div class="row" style="padding-top: 20px; background-color:black; margin: 0; max-width: 100%;">
                 <div class="col-sm-12 col-md-12">
                     <p style="text-align:center; color: blanchedalmond;">Icone Copyright BizPage. All Rights Reserved</p>
                     <p style="text-align: center; color: blanchedalmond;">Designed by BootstrapMade</p>
                 </div> 
+            </div> 
             </div>
 
         </div>
@@ -404,6 +553,7 @@
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="./Lib/owlCar/dist/owl.carousel.min.js"></script>
+        <script src="./Lib/js/simple-scrollspy.min.js"></script>
 
 
        <script type="text/javascript">
@@ -429,6 +579,29 @@
                 }
             });
         </script>
+
+<script>
+    window.onload = function () {
+        scrollSpy('#menu', {
+            sectionClass: '.scrollspy',
+            menuActiveTarget: '.menu-item',
+            offset: 100,
+        })
+    }
+
+    $(".scrollTo").on('click', function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        var offset = 87;
+
+        $('html, body').animate({
+            scrollTop: ($(target).offset().top - offset)
+        }, 1000);
+    });
+
+</script>
+
+
 
     </body>
 </html>
