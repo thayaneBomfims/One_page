@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
     <head>
@@ -18,8 +18,10 @@
               href="./Img/icone.png"/>
 
     </head>
-    <body>
+    <body style="overflow-x: hidden;">
         
+        <button onclick="topFunction()" class="scrollTo" id="Btntop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
         <!--NavBar-->
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: black;">
 
@@ -47,7 +49,7 @@
                             <a class="nav-link menu-item scrollTo" href="#galerry"> Galeria</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-item scrollTo" href="#news-carousel"> Notícias</a> 
+                            <a class="nav-link menu-item scrollTo" href="#noticias"> Notícias</a> 
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-item scrollTo" href="#contact"> Contato</a> 
@@ -257,7 +259,7 @@
 
             <div class="row mt-4">
                 <div class="ser col-sm-6 col-md-4 py-3">
-                    <h4 id="anim-let" class="about-title"><i id="draw" class="fab fa-laptop"></i>Lorem Ipsum</h4>
+                    <h4 id="anim-let" class="about-title"><i id="draw" class="fas fa-laptop"></i>Lorem Ipsum</h4>
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                 </div>
                 <div class="ser col-sm-6 col-md-4 py-3">
@@ -286,7 +288,7 @@
 
 
         <!--Galeria-->
-        <section id="galerry">
+        <section id="galerry" class="scrollspy">
             <div class="container">
                 <div class="scrollspy">
 
@@ -337,10 +339,10 @@
         </section>
 
         <!--Notícias-->
-        <div class="container">
-            <div class="scrollspy" id="news-carousel">
+        <div class="container scrollspy pt-5" id="noticias">
+            <div id="news-carousel">
 
-            <h2 class="title">Notícias</h2>
+            <h2 class="title mt-0">Notícias</h2>
             <p style="text-align: center; padding-bottom: 20px;">Aqui terão as notícias e textinho</p>
 
             <div class="owl-carousel owl-theme">
@@ -348,12 +350,12 @@
                     <div class="card border-light mb-3">
                         <img src="./Img/card1.jpg" class="card-img-top"> 
                         <div class="card-body text-dark" style="padding: 1rem 0;">
-                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Dying Light 2 terá modos 4K, 60fps e ray-tracing  na PS5 e Xbox Series Dying Light 2</h3>
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Dying Light 2 terá modos 4K 60fps e ray-tracing na PS5</h3>
                             <h4 id="data-card">1/04/2021</h4>
-                            <p style="padding-bottom: 1%; text-align: justify; font-weight:lighter;">Dying Light 2 já sofreu diversos adiamentos, que não afetam o entusiasmo à sua volta, mesmo que as informações sobre o que esperar do trabalho da Techland tenham sido escassas nos últimos meses.</p>
+                            <p class="card-text">Dying Light 2 já sofreu diversos adiamentos, que não afetam o entusiasmo à sua volta, mesmo que as informações sobre o que esperar do trabalho da Techland...</p>
                         </div>
-                        <div class="card-body" style="padding: .5rem 0;" style="margin-right: auto; margin-left: auto;">
-                            <a target="_blank" href="https://www.eurogamer.pt/articles/2021-04-01-dying-light-2-tera-modos-4k-60fps-e-ray-tracing-na-ps5-e-xbox-series" id="bot-card" class="main-btn">Saiba mais</a>
+                        <div class=" bot-card">
+                            <a target="_blank" href="https://www.eurogamer.pt/articles/2021-04-01-dying-light-2-tera-modos-4k-60fps-e-ray-tracing-na-ps5-e-xbox-series" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -364,10 +366,10 @@
                         <div class="card-body text-dark" style="padding: 1rem 0;">
                             <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Resident Evil terá mesma história dos jogos</h3>
                             <h4 id="data-card">31/03/2021</h4>
-                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">A história dos primeiros filmes de Resident Evil não era exatamente o ponto forte da franquia nos cinemas, deixando muitos fãs descontentes com o rumo que a franquia tomou nos cinemas.</p>
+                            <p class="card-text">A história dos primeiros filmes de Resident Evil não era exatamente o ponto forte da franquia nos cinemas, deixando muitos fãs descontentes com o rumo que ...</p>
                         </div>
-                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
-                            <a target="_blank" href="https://www.comboinfinito.com.br/principal/resident-evil-tera-mesma-historia-dos-jogos-afirma-ator/" id="bot-card" class="main-btn">Saiba mais</a>
+                        <div class=" bot-card">
+                            <a target="_blank" href="https://www.comboinfinito.com.br/principal/resident-evil-tera-mesma-historia-dos-jogos-afirma-ator/" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -378,10 +380,10 @@
                         <div class="card-body text-dark" style="padding: 1rem 0;">
                             <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">PUBG Lite será descontinuado no fim de abril</h3>
                             <h4 id="data-card">31/03/2021</h4>
-                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">A PUBG Corporation anunciou que o suporte ao PUBG Lite vai acabar em 29 de abril. A partir de hoje (31) já não é mais possível baixar o game ou comprar a moeda virtual L-COIN.</p>
+                            <p class="card-text">A PUBG Corporation anunciou que o suporte ao PUBG Lite vai acabar em 29 de abril. A partir de hoje (31) já não é mais possível baixar o game ou comprar a ...</p>
                         </div>
-                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
-                            <a target="_blank" href="https://www.terra.com.br/diversao/games/pubg-lite-sera-descontinuado-no-fim-de-abril,b22b12515ef0b7caad36a2a3dc9f3678ytsngcrt.html" id="bot-card" class="main-btn">Saiba mais</a>
+                        <div class="bot-card">
+                            <a target="_blank" href="https://www.terra.com.br/diversao/games/pubg-lite-sera-descontinuado-no-fim-de-abril,b22b12515ef0b7caad36a2a3dc9f3678ytsngcrt.html" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -392,10 +394,10 @@
                         <div class="card-body text-dark" style="padding: 1rem 0;">
                             <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Alan Wake 2 estaria em desenvolvimento pela Remedy</h3>
                             <h4 id="data-card">01/04/2021</h4>
-                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">Alan Wake 2 chegou ás manchetes com um rumor sobre o seu desenvolvimento. Contudo, conforme dito, trata-se apenas de um rumor. Mas sabemos que onde há fumaça, normalmente há fogo.</p>
+                            <p class="card-text">Alan Wake 2 chegou ás manchetes com um rumor sobre o seu desenvolvimento. Contudo, conforme dito trata-se apenas de um rumor. Mas sabemos que ...</p>
                         </div>
-                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
-                            <a href="https://www.comboinfinito.com.br/principal/alan-wake-2-estaria-em-desenvolvimento-pela-remedy-segundo-rumor/" id="bot-card" class="main-btn">Saiba mais</a>
+                        <div class="bot-card">
+                            <a target="_blank" href="https://www.comboinfinito.com.br/principal/alan-wake-2-estaria-em-desenvolvimento-pela-remedy-segundo-rumor/" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -406,10 +408,10 @@
                         <div class="card-body text-dark" style="padding: 1rem 0;">
                             <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">Como conseguir o arco Fang of Draugr em Valheim</h3>
                             <h4 id="data-card">31/03/2021</h4>
-                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">Uma das melhores armas de Valheim é o arco Fang of Draugr. O equipamento, além de ser estiloso, tem um alto poder de perfuração e também causa dano de veneno.</p>
+                            <p class="card-text">Uma das melhores armas de Valheim é o arco Fang of Draugr. O equipamento, além de ser estiloso, tem um alto poder de perfuração e também...</p>
                         </div>
-                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
-                            <a target="_blank" href="https://www.terra.com.br/diversao/games/como-conseguir-o-arco-fang-of-draugr-em-valheim,ac2135dd3dbbceecd56532f6bc731afe9f23e62i.html" id="bot-card" class="main-btn">Saiba mais</a>
+                        <div class="bot-card">
+                            <a target="_blank" href="https://tecnoblog.net/427122/como-conseguir-o-arco-fang-of-draugr-em-valheim/#:~:text=Para%20criar%20o%20arco%20Fang,picaretas%20para%20coletar%20os%20minérios." class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -418,22 +420,21 @@
                     <div class="card border-light mb-3">
                         <img src="./Img/card6.jpg" class="card-img-top"> 
                         <div class="card-body text-dark" style="padding: 1rem 0;">
-                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">No Man's Sky ganha modo de "Expedições Compartilhadas"</h3>
+                            <h3 id="title-card" class="card-title" style="margin-bottom: 0.1rem;">No Man's Sky ganha modo de "Expedições Compartilhadas</h3>
                             <h4 id="data-card">31/03/2021</h4>
-                            <p style="padding-bottom: 5%; text-align: justify; font-weight:lighter;">No Man's Sky recebeu uma atualização nesta quarta-feira (31) intitulada "Expeditions". O update é gratuito e traz um novo modo de jogo - as "Expedições Compartilhadas".</p>
+                            <p class="card-text">No Man's Sky recebeu uma atualização nesta quarta-feira (31) intitulada "Expeditions". O update é gratuito e traz um novo modo de jogo...</p>
                         </div>
-                        <div class="card-body" style="padding: 1rem 0;" style="margin-right: auto; margin-left: auto;">
-                            <a target="_blank" href="https://www.terra.com.br/diversao/games/no-mans-sky-ganha-modo-de-expedicoes-compartilhadas-em-atualizacao,19068e11591ea6d397687a4d7a3c7d31f1qjv01m.html" id="bot-card" class="main-btn">Saiba mais</a>
+                        <div class="bot-card">
+                            <a target="_blank" href="https://www.terra.com.br/diversao/games/no-mans-sky-ganha-modo-de-expedicoes-compartilhadas-em-atualizacao,19068e11591ea6d397687a4d7a3c7d31f1qjv01m.html" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
-                </div>
-                
+                </div>          
             </div>
             </div>
         </div>
 
         <!--Fale conosco-->
-        <section id="contact">
+        <section id="contact" class="scrollspy">
             <div class="container">
                 <div class="scrollspy">
                 <div class="contact" style="text-align: center";>
@@ -447,7 +448,7 @@
                             <h3 id="title-contact">Enderço</h3>
                             <p>Moema Tinoco da Cunha Lima, SP/SP, BR</p>
                         </div>
-                        <div class="col-sm-12 col-md-4" style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; vertical-align: auto;">
+                        <div class="col-sm-12 col-md-4 borda-numero">
                             <i class="fas fa-mobile" style="font-size: 48px; display: inline-block; margin-bottom: 10px; color: whitesmoke;"></i>
                             <h3 id="title-contact">Número de telefone</h3>
                             <p>+55 (99)99999-9999</p>
@@ -464,41 +465,37 @@
             </section>
             
             <section class="formulario">
+                <div class="container">
                 <div class="form">
                     <div class="row justify-content-center">
                         <div class="col-sm-12 col-md-10 col-lg-8">
-                            <form>
-                                <div class="form-row">
+                            <form class="sombra-form" style="margin: 50px 0px;">
+                                <div class="form-row" >
 
                                     <div id="format2" class="form-group col-sm-12">
-                                        <label for="inputnome" style="padding-top: 30px"></label>
                                         <input type="text" class="form-control" id=inputnome placeholder="Nome completo">
                                     </div>
 
                                     <div id="format2" class="form-group col-sm-6">
-                                        <label for="inputcel"></label>
                                         <input type="text" class="form-control" id=inputcel placeholder="Telefone">
                                     </div>
 
                                     <div id="format2" class="form-group col-sm-6">
-                                        <label for="inputemail"></label>
                                         <input type="text" class="form-control" id=inputemail placeholder="E-mail">
                                     </div>
 
                                     <div id="format2" class="form-group col-sm-12">
-                                        <label for="inputass"></label>
                                         <input type="text" class="form-control" id=inputass placeholder="Assunto">
                                     </div>
 
                                     <div id="format2" class="form-group col-sm-12">
-                                        <label for="inputmess"></label>
                                         <textarea class="form-control" id="inputmess" rows="5">Digite sua Mensagem</textarea>
                                     </div>
 
                                     <div class="form-group col-sm-12">
 
-                                        <div class="form-check">
-                                            <label class="form-check=label">
+                                        <div class="form-check" style="margin-left: 4px;">
+                                            <label class="form-check=label" style="color: black;">
                                                 <input class="form-check-input" type="checkbox">Desejo receber novidades por e-mail
                                             </label>
 
@@ -508,7 +505,7 @@
 
                                 </div>
 
-                                <div class="form-row">
+                                <div class="form-row d-flex justify-content-center">
                                     <button type="submit" class="btn btn-dark">Enviar</button>
                                 </div>
                             </form>
@@ -517,6 +514,7 @@
 
                     </div>
                 </div>
+            </div>
             </section>
 
         <!--Footer-->
@@ -555,8 +553,8 @@
                 </div> 
             </div>
 
-            <div class="container-fluid">
-            <div class="row" style="padding-top: 10px; padding-bottom: 0px; background-color:black; margin-top: 20px; max-width: 100%; align-content: center;">
+            <div class="container-fluid" style="background-color: black; margin-top: 20px; padding-top: 15px; padding-bottom: 0px;">
+            <div class="row">
                 <div class="col-sm-12 col-md-12">
                     <p style="text-align:center; color: blanchedalmond; font-size: 13px;">Icone Copyright BizPage. All Rights Reserved<br>
                     Designed by ?</p>
@@ -583,7 +581,7 @@
                 dots: true,
                 loop: true,
 
-                navText:["<div class='nav-btn prev-slide'> <i class='fas fa-chevron-left' style='font-size: 20px'></i> </div>","<div class='nav-btn next-slide'> <i class='fas fa-chevron-right' style='font-size: 20px'></i> </div>"],
+                navText:["<div class='nav-btn prev-slide'> <i class='fas fa-chevron-left' style='font-size: 10px'></i> </div>","<div class='nav-btn next-slide'> <i class='fas fa-chevron-right' style='font-size: 10px'></i> </div>"],
                 responsive: {
                     0: {
                         items: 1
@@ -610,13 +608,31 @@
     $(".scrollTo").on('click', function (e) {
         e.preventDefault();
         var target = $(this).attr('href');
-        var offset = 87;
+        var offset = 70;
 
         $('html, body').animate({
             scrollTop: ($(target).offset().top - offset)
         }, 1000);
     });
 
+</script>
+
+<script>
+    mybutton = document.getElementById("Btntop");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    function topFunction(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
 </script>
 
 

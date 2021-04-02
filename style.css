@@ -1,4 +1,34 @@
 
+#Btntop {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color:rgb(98, 36, 116);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 20px;
+
+    height: 40px;
+    width: 40px;
+  }
+  
+  #Btntop i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  #Btntop:hover {
+    background-color: rgb(33, 29, 34); /* Add a dark-grey background on hover */
+  }
+
 .nav-item .nav-link{
     text-transform: uppercase;
     color: whitesmoke;
@@ -250,7 +280,6 @@ h2:after{
     color: whitesmoke;
     padding: 20px;
     margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 .title-two{
@@ -308,21 +337,32 @@ h2:after{
     font-weight:normal;
 }
 
-#news-carousel #bot-card{
+#news-carousel .bot-card{
+    margin-right: auto; 
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+#news-carousel .bot-card a{
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
+    color: #fff;
+
+    width: 100%;
     display: inline-block;
-    padding: 8px 130px;
+    padding: 8px 20px;
     border-radius: 5px;
     transition: 0.5s;
     border: transparent;
     background-color: rgb(98, 36, 116);
-    color: #fff;
+
 }
 
-#news-carousel #bot-card:hover{
+#news-carousel .bot-card a:hover{
     color: white;
     background-color: rgb(33, 29, 34);
     border-color: white;
@@ -331,6 +371,14 @@ h2:after{
     text-decoration: none;
 }
 
+#news-carousel .card-text{
+    text-align: justify; 
+    font-weight:lighter;
+    min-height: 120px;
+}
+
+
+
 /*Fale conosco */
 
 #contact{
@@ -338,7 +386,6 @@ h2:after{
     color: whitesmoke;
     padding: 30px;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 #title-contact{
@@ -356,19 +403,18 @@ h2:after{
     font-size: 16px;
 
     display: inline-block;
-    padding: 8px 28px;
-    border-radius: 10px;
+    padding: 8px 35px;
+    border-radius: 5px;
     transition: 0.5s;
     margin-top: 0px;
-    margin-bottom: 40px;
-    background-color: black;
+    background-color: rgb(98, 36, 116);
     border: 2px solid #fff;
     color: #fff;
 }
 
 .formulario .btn:hover{
     color: white;
-    background-color: rgb(61, 58, 63);
+    background-color: rgb(33, 29, 34);
     border-color: #5a5c5e;
     box-shadow: 0 0 0 0.2rem;
 
@@ -378,15 +424,22 @@ h2:after{
 #format2{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
     margin-bottom: 1px;
     border-radius: 1px;
+}
+
+.form .sombra-form{
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(110, 109, 109, 0.3); 
+    box-shadow: 0px 0px 20px 3px rgba(110, 109, 109, 0.3);
+    padding: 20px
 }
 
 .footer{
     background-color:#111; 
     color: white;
     margin-top: 0; 
-    max-width: 100%;
+    width: 100%;
     padding-top: 40px;
 }
 #footer-top{
@@ -408,6 +461,19 @@ h2:after{
     font-size: 25px;
     padding-left: 3px;
     padding-right: 0;
+}
+
+#contact .borda-numero{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd; 
+    vertical-align: auto;
+}
+
+@media (max-width: 767px){
+    #contact .borda-numero{
+        border-left: none;
+        border-right: none; 
+    }
 }
 
 .social-midias:hover{
