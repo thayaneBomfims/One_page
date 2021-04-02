@@ -331,7 +331,89 @@ h2:after{
     text-decoration: none;
 }
 
+/*Fale conosco */
 
+#contact{
+    background-color: rgb(33, 29, 34);
+    color: whitesmoke;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#title-contact{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.formulario .btn{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    background-color: black;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.formulario .btn:hover{
+    color: white;
+    background-color: rgb(61, 58, 63);
+    border-color: #5a5c5e;
+    box-shadow: 0 0 0 0.2rem;
+
+    text-decoration: none;
+}
+
+#format2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    border-radius: 1px;
+}
+
+.footer{
+    background-color:#111; 
+    color: white;
+    margin-top: 0; 
+    max-width: 100%;
+    padding-top: 40px;
+}
+#footer-top{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 2px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.social-midias{
+    color: whitesmoke;
+    font-size: 25px;
+    padding-left: 3px;
+    padding-right: 0;
+}
+
+.social-midias:hover{
+    color: rgb(98, 36, 116);
+    text-decoration: none;
+}
 
 /* Carrosel not*/
 
