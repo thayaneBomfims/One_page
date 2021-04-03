@@ -93,29 +93,26 @@
 
                         <div class="carousel-item active" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(./Img/img1.jpg);">                         
                                 <div class="container">
-                                    <div class="row" style="height:91vh">
-                                        <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                                    <div class="row d-flex justify-content-center justify-content-md-start" style="height:91vh">
+                                        <div class="col-sm-12 col-md-6 d-flex align-items-center col-texto-banner">
                                             <div class="texto">
                                                 <h1>Lorem ipsum</h1>
                                                 <p>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</p>
                                             </div>                                            
                                         </div>
-                                        <div class="col-sm-10 col-md-4 d-flex align-items-center">
+                                        <div class="col-10 col-md-6 col-lg-4 d-flex align-items-center col-form-banner">
                                             <form class="form" style="background-color: rgb(33, 29, 34); border-radius: 10px; border:2px solid black">
                                                 <div class="form-row">
-                                                    <div class="form-group col-12" style="margin-bottom: 0px;">
-                                                        <p style="color: white; font-family: Montserrat, sans-serif; text-align: center; margin-bottom: 0px; margin-top: 20px;">sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                                                    <div class="form-group col-12" style="margin-bottom: 7px; padding: 0px 10px;">
+                                                        <p style="color: white; font-family: Montserrat, sans-serif; text-align: center; margin-bottom: 0px; margin-top: 20px;">sed quia consequuntur magni dolores</p>
                                                     </div>
-                                                    <div id="format" class="form-group col-11">
-                                                        <label for="inputname"></label>
+                                                    <div class="form-group col-11 format">
                                                         <input type="text" class="form-control backc" id="inputname" placeholder="Seu nome">
                                                     </div>
-                                                    <div id="format" class="form-group col-11">
-                                                        <label for="inputTel"></label>
+                                                    <div class="form-group col-11 format">
                                                         <input type="text" class="form-control backc" id="inputTel" placeholder="Telefone">
                                                     </div>
-                                                    <div id="format" class="form-group col-11">
-                                                        <label for="inputemail"></label>
+                                                    <div class="form-group col-11 format">
                                                         <input type="text" class="form-control backc" id="inputemail" placeholder="E-mail">
                                                     </div>
                                                 </div>
@@ -570,72 +567,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="./Lib/owlCar/dist/owl.carousel.min.js"></script>
         <script src="./Lib/js/simple-scrollspy.min.js"></script>
-
-
-       <script type="text/javascript">
-            $(".owl-carousel").owlCarousel({
-                autoplay: true,
-                autoplayHoverPause: true,
-                items: 3,
-                nav: true,
-                dots: true,
-                loop: true,
-
-                navText:["<div class='nav-btn prev-slide'> <i class='fas fa-chevron-left' style='font-size: 10px'></i> </div>","<div class='nav-btn next-slide'> <i class='fas fa-chevron-right' style='font-size: 10px'></i> </div>"],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-        </script>
-
-<script>
-    window.onload = function () {
-        scrollSpy('#menu', {
-            sectionClass: '.scrollspy',
-            menuActiveTarget: '.menu-item',
-            offset: 100,
-        })
-    }
-
-    $(".scrollTo").on('click', function (e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        var offset = 70;
-
-        $('html, body').animate({
-            scrollTop: ($(target).offset().top - offset)
-        }, 1000);
-    });
-
-</script>
-
-<script>
-    mybutton = document.getElementById("Btntop");
-
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-    }
-
-    function topFunction(){
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-</script>
-
-
+        <script src="./script.js"></script>
 
     </body>
 </html>

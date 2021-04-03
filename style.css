@@ -88,6 +88,20 @@
     padding-left: 10%;
 }
 
+@media (max-width: 400px){
+    #Slidep .texto h1{
+        font-size: 2rem;
+    }
+    .col-texto-banner{
+        height: fit-content;
+    }
+
+    .col-form-banner{
+        align-items: baseline !important;
+        margin-top: -30px;
+    }
+}
+
 #Slidep .texto h2{
     font-size: 2.5rem;
     color: whitesmoke;
@@ -116,10 +130,10 @@
     padding-top: 5px;
 }
 
-#format{
+.format{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 
 .backc{
@@ -140,8 +154,8 @@
 .form-check{
     font-family: "Montserrat", sans-serif;
     color: whitesmoke;
-    margin-left: 21px;
-    margin-top: 20px;
+    margin-top: 2px;
+    text-align: center;
 }
 
 #botao{
@@ -154,9 +168,10 @@
     border-color: transparent;
 
     display: block;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: auto;
+    padding-right: auto;
     margin: 20px auto;
+    margin-top: 5px;
 }
 
 /*Sobre*/
